@@ -1,0 +1,16 @@
+<h1 style="text-align: center">Update Book Detail</h1>
+
+<h3 style="margin-left: 100px">List of Books</h3>
+<div id="list" *ngIf="bookList.length">
+
+  <ul *ngFor="let book of bookList">
+    <li>{{book.title}}, id: {{book.id}}, author: {{book.authorName}}</li>
+  </ul>
+
+</div>
+
+<div>
+  Book Title:<input type="text" required [(ngModel)]="title">
+  Author name:<input type="text" requird [(ngModel)]="name">
+  <button (click)="update()">Submit</button>
+</div>

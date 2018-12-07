@@ -1,0 +1,10 @@
+<h1 id="title">Book Store</h1>
+<h3 style="margin-left: 100px">List of Books</h3>
+<div id="list" *ngIf="bookList.length">
+
+  <ul *ngFor="let book of bookList">
+    <li>{{book.title}}, id: {{book.id}}, author: {{book.authorName}}</li>
+  </ul>
+
+</div>
+

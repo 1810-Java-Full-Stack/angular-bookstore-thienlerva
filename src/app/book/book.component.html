@@ -1,0 +1,22 @@
+
+
+<h1 style="text-align: center">Book</h1>
+
+<h3>List of books</h3>
+<div *ngIf="bookList.length">
+<ol *ngFor="let b of bookList">
+
+  <li>{{b.title}}, id: {{b.id}}</li>
+
+</ol>
+</div>
+
+<label>Book id:</label>
+<input type="text" [(ngModel)]="id">{{id}}
+<button (click)="getAuthorDetail()">Get Author detail</button><br>
+{{output}}
+
+
+
+
+

@@ -1,0 +1,49 @@
+<h1 id="title">List View</h1>
+
+<label>Enter book id:</label>
+<input type="text" placeholder="1000" required [(ngModel)]="id">{{id}}<br>
+<button (click)="getBookById()">Get Book Detail</button>
+
+<div *ngIf="currentBook != null"><h4>Book tittle: {{currentBook.title}}</h4>
+</div>
+
+<div *ngIf="currentBook == null">
+  <p>Book not found</p>
+</div>
+
+
+<!-- <table style="width:100%">
+    <tr>
+      <th>ID</th>
+      <th>Author Name</th> 
+      <th>Bio</th>
+    </tr>
+    <div *ngIf="authorList.length">
+      <div *ngFor="let author of authorList">
+      <tr>
+        <td>{{author.authorName}}</td>
+        <td>{{author.authorId}}</td> 
+        <td>{{author.authorBio}}</td>
+      </tr>
+    </div>
+    </div>
+  </table>
+
+  <hr>
+
+  <div>
+
+    <label>Enter author ID:</label>
+    <input type="text" [(ngModel)]="authorid">{{authorid}}<br>
+    <button (click)="getAuthor()">Get Author Info</button>
+    {{output}}
+  
+  </div> -->
+
+  <!-- City Name:<input type="text" [(ngModel)]="cityName">
+<button (click)="checkWeather()">Check weather</button>
+<hr>
+<div *ngIf="response">
+<p>Temperature: {{temp}}</p>
+<p>Weather Condition: {{response.weather[0].description}}</p>
+</div> -->
